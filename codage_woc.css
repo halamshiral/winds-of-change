@@ -1,0 +1,209 @@
+
+/*--------------------- PROFILS ---------------------------------*/
+
+/*---- onglets des profils ------*/
+
+/* les onglets */
+.systab .tab {display: inline-block;
+    padding: 1px 5px;margin-left:6px;
+  margin-top:2px;
+  cursor: pointer;
+}
+
+.tab {width: 70px;
+  margin-bottom:8px;
+  margin-top:-8px;
+  height:10px;
+display: inline-block;
+    background:var(--col6);
+border-bottom: 1.5px solid var(--col2);
+  color:var(--col15);
+padding:5px 10px; text-align: center;
+      font-family: 'Poppins', sans-serif;
+       text-transform: uppercase;
+     transition: color 0.3s;
+font-weight: 500;
+letter-spacing: .5px;
+font-size:9px!important;}
+
+
+/* les onglets survolés */
+.systab .tab:hover {
+    font-style: italic;
+}
+/* les onglets sélectionnés */
+.systab .tab.selected{
+border-bottom: 1.5px solid var(--col4);
+}
+
+/* contenus associés aux onglets  */
+.systab .contents {
+  margin-top: 1px;
+  margin-bottom: 1px;
+      text-align: justify;
+}
+/* style des onglets */
+.systab.s_float .tab,.systab.s_float .tab {
+  display: block;
+  margin: 5px;
+}
+/* flottement des conteneurs  */
+.systab.s_float .tabs,.systab.s_float .contents {
+  float: left;
+}
+
+/* champs infos (ex : 1er onglet) */
+.infos01 .infos02:first-child, .infos01 .infos02:nth-child(2), .infos01 .infos02:nth-child(3) {display: none;}
+/* champs compétences (ex : 2ème onglet)  */
+.comp01 .comp02:nth-child(1n) {display: none;}
+.comp01 .comp02:first-child, .comp01 .comp02:nth-child(2), .comp01 .comp02:nth-child(3) {display:block;}
+
+.complabel {color: var(--col6)!important; 
+  background: linear-gradient(0.30turn,var(--col2),var(--col4));
+    padding: 2px 10px;
+  margin-bottom:3px;
+  text-transform: uppercase!important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 9px;
+font-weight: 500;
+letter-spacing: 1.5px;
+    }
+
+.compcont{margin-top: 5px;
+    margin-bottom: 2px;
+  padding:5px;
+    height: 60px!important;
+    background: var(--col6);
+    overflow:hidden;
+    text-align: left;}
+
+.prfond{
+  width:216px;
+height: 735px;
+margin: auto;
+text-align: justify;
+font-family: Arial, sans-serif;
+font-size: 11px;
+line-height: 11px;
+color:var(--col14);
+background:var(--col6);}
+
+.pseudofond{ height: auto;
+     width:200px;
+  margin-top:5px;
+     background: var(--col6);
+     margin: auto;
+}
+
+.prpseudo {padding:2px;
+     line-height: 13px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 12px;
+     font-family: 'Poppins', sans-serif;
+     letter-spacing: 1px;
+     transition: color 0.3s;
+}
+
+.prpseudo a span strong {
+  font-weight: 500 !important;
+}
+
+.rang{height: auto;
+   background: rgb(178,199,220);
+    background: linear-gradient(90deg, rgba(165, 194, 170) 20%, #abb9cc 34%, #918BB5 100%);
+     width:200px;
+  margin-top:5px!important;
+    padding: 1px 0px;
+     margin: auto;
+  text-align:center;
+text-transform: uppercase;
+     color: var(--col7);
+     font-family: 'Poppins', sans-serif;
+  font-size: 8px!important;
+font-weight: 400;
+letter-spacing: 1px;}
+
+.pravfond{vertical-align:top; 
+text-align:center;
+  margin:auto;
+width:200px;
+height:320px;
+}
+
+.pravfond img:hover{ filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);}
+
+.prinfosfond {width:200px; 
+height:230px; overflow:auto;
+font-size:10px; text-align:justify-all; line-height:10px;
+text-transform: lowercase;
+font-family: 'Poppins', sans-serif;
+color:var(--col14);
+margin:auto;
+background:var(--col7); 
+ overflow-x: hidden!important;}
+
+
+.champs {
+white-space: normal;
+  word-spacing:3px;
+     color: var(--col4);
+  font-family: 'Poppins', sans-serif;
+     transition: color 0.3s;
+  font-size: 9px;
+font-weight: 500;
+letter-spacing: .5px;
+    text-transform: lowercase;
+}
+
+
+.txtinfos {
+padding:10px;
+ overflow-x: hidden!important;}
+
+.rangimg { background:var(--col6);
+  max-width:200px;
+  width:200px!important;
+text-align:center;
+height: auto;
+margin-bottom:0px;}
+
+.rangimg img{ max-width:190px;
+  width:190px!important;
+  margin:auto!important;
+  text-align:center;
+margin-bottom:-10px;}
+
+.postdetails.poster-profile img {
+  max-width:175px; /* largeur */
+  max-height:px; /* hauteur */
+   overflow-x: hidden!important;
+
+}
+
+
+.imgprofil{height:9px!important;
+text-align:center;
+margin:auto!important;}
+
+/* IMAGES CONTACT JOUEUR */
+.CONTACTPR {
+height:9px!important;
+text-align:center;
+margin:auto!important;
+  postion:relative;
+}
+
+.CONTACTPR img{height:15px!important;
+margin-top:10px;
+margin-bottom:10px;}
+
+hr {
+    border: solid var(--col8) 0;
+    border-top-width: 1px;
+    height: 0;
+}
