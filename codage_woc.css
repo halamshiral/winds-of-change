@@ -1,4 +1,281 @@
 
+
+
+/*** ------------------------------- ***/
+/*** QUI EST EN LIGNE -------------- ***/
+
+.qeel {
+    background: var(--neutralDark);
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-gap: 1px;
+    margin-bottom: 10px;
+}
+
+.qeel > div {
+    background: var(--neutral);
+    padding: 15px 10px;
+}
+
+.qeel-left {
+    border-radius: 5px 0 0 5px;
+}
+
+/* Dernier inscrit */
+#last_user {
+  display: flex;
+  align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#lastuser_avatar img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-right: 10px;
+  float:left;
+}
+
+#newest_user {font-size: 10px!important; font-weight: 800; letter-spacing: 1.5px; 
+  text-transform: uppercase;font-family: 'Quicksand', sans-serif;}
+
+.qeel_welcome{border-radius:2px; 
+  moz-border-radius:2px;
+  padding:4px 10px;
+  color:var(--neutral);
+  background:var(--couleur3);
+  background: linear-gradient(135deg,var(--couleur4),var(--couleur3));
+  text-transform: uppercase; 
+  font-weight: 600;
+  font-size:9px!important;
+  letter-spacing: 0.5px;
+  display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 5px;}
+
+/*Messages et membres*/
+
+.qeel_msgmb{vertical-align:top; display:flex; flew-direction: row;  justify-content: space-evenly;align-items: center;}
+
+#tUSERS{font-family: 'Quicksand', sans-serif; -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+background-image: -webkit-linear-gradient(right,var(--couleur3),var(--couleur4));line-height:30px; font-size: 30px; font-weight:400!important; }
+
+#tPOSTS{font-family: 'Quicksand', sans-serif; -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+background-image: -webkit-linear-gradient(right,var(--couleur3),var(--couleur4));line-height:30px; font-size: 30px; font-weight:400!important; }
+
+/* groupes*/
+
+i.cp.cp-fire{
+    color: #dcc0a6;}
+
+i.cp.cp-drop{
+    color: #a6d2dc;}
+
+i.cp.cp-leaf{
+    color: #c7dcc0;}
+
+i.cp.cp-flash {
+    color: #c0cbdc;}
+
+a.air {
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--neutralDark);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 30px;
+    margin-bottom: 5px;
+    font-size: 12px!important;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--textColorAccent);
+}
+
+a.air:hover {
+ background: linear-gradient(135deg,#c0cbdc,#c0cbdc);
+  color: var(--neutral);
+}
+
+a.terre {
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--neutralDark);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 30px;
+    margin-bottom: 5px;
+    font-size: 12px!important;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--textColorAccent);
+}
+
+a.terre:hover {
+ background: linear-gradient(135deg,#c7dcc0,#c7dcc0);
+  color: var(--neutral);}
+
+
+a.eau {
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--neutralDark);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 30px;
+    margin-bottom: 5px;
+    font-size: 12px!important;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--textColorAccent);
+}
+
+a.eau:hover {
+ background: linear-gradient(135deg,#a6d2dc,#a6d2dc);
+  color: var(--neutral);}
+
+a.feu {  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--neutralDark);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 30px;
+    margin-bottom: 5px;
+    font-size: 12px!important;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--textColorAccent);
+}
+
+
+a.feu:hover {
+ background: linear-gradient(135deg,#dcc0a6,#dcc0a6);
+  color: var(--neutral);}
+
+a.feu:last-child {margin-bottom: 0}
+
+.qeel-middle {}
+
+/*X connectés :: 1 membre, 0 invisible, 0 invité*/
+#total_users { font-size: 10px!important;
+    font-family: 'Noto Sans', sans-serif; 
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    line-height:10px;
+    text-align: center;
+  width: 225px;
+    margin: auto;
+}
+
+/*Connectés en ce moment*/
+#online_users {
+    height: 58px;
+    overflow: auto;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    font-size: 10px!important;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+/*ne pas supprimer*/
+#online_users br {
+    display: none
+}
+
+.img_credits { width: auto; height: auto; 
+background: url('https://images2.imgbox.com/04/f7/m9gRaQ7x_o.png'); 
+position: relative; margin: auto; border-radius: 5px;
+object-fit: cover;
+object-position: center;
+background-size: 100%;}
+
+.credits {height: 115px; 
+    font-size: var(--little-size);
+    border: var(--border);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    opacity: 0;
+    -webkit-transition: all 0.5s; -htm-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;
+    overflow:auto;
+    text-align:justify;
+    line-height: 12px;}
+
+.img_credits:hover > .credits{
+opacity: 1;
+background: var(--neutral);}
+
+.qeel-right {
+    border-radius: 0 5px 5px 0;
+    text-align: justify;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    font-size: 10px!important;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.qeel_24h {
+    height: 151px;
+    overflow: auto;
+      line-height: 16px;
+}
+
+
+.qeel_liens { float:left;
+  margin-top: 3px;
+  margin-bottom: 6px;
+    width: 118px;
+    font-size: 9px;
+    text-align: center;
+   margin-right:2px; color:var(--contrast);
+}
+
+.qeel_liens_cadre { 
+background: var(--neutralDark); color:var(--contrast);
+  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; 
+    width: 115px;
+margin-bottom: 6px;
+    padding: 5px 0;}
+
+.qeel_liens_a {color:var(--contrast);font-weight: 600; letter-spacing: .5px; text-transform: uppercase;}
+.qeel_liens a{color:var(--contrast);}
+
+
 /*--------------------- PROFILS ---------------------------------*/
 
 /*---- onglets des profils ------*/
